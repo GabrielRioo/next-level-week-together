@@ -40,6 +40,7 @@ export function Home() {
       return;
     }
 
+    // Caso exista, redirecionar para a sala com o codigo
     history.push(`/rooms/${roomCode}`);
   }
 
