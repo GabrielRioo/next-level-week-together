@@ -40,6 +40,11 @@ export function Home() {
       return;
     }
 
+    if(!roomRef.val().endedAt) {
+        alert('Room already closed.');
+        return;
+    }
+
     // Caso exista, redirecionar para a sala com o codigo
     history.push(`/rooms/${roomCode}`);
   }
